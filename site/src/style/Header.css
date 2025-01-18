@@ -1,0 +1,137 @@
+.header{
+    background-color: rgba(0, 0, 0, 0.797);
+height: 80px;
+/* width: 100%; */
+display: flex;
+justify-content:center;
+align-items: center;
+
+}
+.header .container{
+display: flex;
+justify-content:space-between;
+align-items: center;
+gap: 50px;
+z-index: 20;
+}
+
+@media (max-width:767px){
+    .header{
+        height:400px !important;
+    }
+    .header .container{
+        flex-direction: column-reverse;
+
+    }
+}
+
+.header .container .links {
+    display: flex;
+justify-content:space-between;
+align-items: center;
+gap: 50px;
+}
+@media (max-width:767px){
+    .header .container .links{
+        flex-direction: column;
+
+    }
+}
+
+.header .container .links .contact{
+    position: relative;
+    cursor: pointer;
+    z-index: 20;
+}
+.header .container .links .contact .icon{
+    width: 100%;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+    }
+
+    .header .container .links .contact .icon:not(:last-child){
+        border-bottom: 2px solid rgba(0, 0, 0, 0.72);
+    }
+
+.header .container .links .contact .social{
+    padding: 10px;
+    position: absolute;
+    bottom:-270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    border-radius: 0px 5px 5px 5px;
+}
+
+.header .container .links .contact .social::after{
+    content: "";
+    position: absolute;
+    top:-29px;
+    left: 0;
+    /* width:50px;
+    height: 50px; */
+    /* background-color: green; */
+    border-width: 15px;
+    border-style:  solid ;
+    border-color: transparent transparent rgb(255, 255, 255) transparent;
+
+}
+
+.header .container .links .contact .hide{
+    display: none;
+}
+
+.header .container .links .navlink{
+     color: white;
+     transition: color .5s ease-in-out;
+     font-size: 1.2rem;
+     position: relative;
+     padding-bottom: 10px;
+
+}
+
+.header .container .links .navlink::after{
+    content: "";
+    position: absolute;
+    width:0;
+    height:3px;
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    left: 0;
+    transition: width .5s ease-in-out;
+}
+.header .container .links .navlink:hover::after{
+width: 100%;
+}
+
+.header .container .links .navlink:hover{
+color: rgb(229, 229, 229);
+}
+
+.header .container img .img_{
+    width: 200px;
+height: 200px;
+
+}
+
+
+.header .container .img_ img{
+    width:70px;
+height:70px;
+border-radius: 50%;
+}
+@media (max-width:767px){
+    .header .container .img_ img{
+        width:100px;
+    height:100px;
+    border-radius: 50%;
+    }
+}

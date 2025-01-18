@@ -1,0 +1,93 @@
+.projects{
+    background-color: beige;
+}
+
+.projects h1{
+text-align: center;
+}
+
+.projects .proj_cont .container{
+display: grid;
+grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+gap: 10px;
+position: relative;
+}
+
+.projects .proj_cont .container .card{
+    /* height: 300px; */
+    background-color: rgb(32, 37, 41);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.projects .proj_cont .container .card::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom:0;
+    left:0;
+    background-color: rgba(255, 106, 0, 0.391);
+    transition: height .5s ease-in-out;
+}
+
+.projects .proj_cont .container .card:hover::before{
+    height: 100%;
+}
+
+.projects .proj_cont .container .card img{
+    width:250px;
+    height: 200px;
+    max-width: 100%;
+}
+
+.projects .proj_cont .container .card h3{
+    color: white;
+   z-index: 20;
+
+}
+
+.projects .proj_cont .container .proj_links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    position: absolute;
+    transform: translateY(250px);
+    z-index: 20;
+    transition:transform .5s ease-in-out;
+    
+
+}
+.projects .proj_cont .container .card:hover .proj_links{
+    transform: translateY(0);
+}
+
+.projects .proj_cont .container .card .proj_links a{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+font-weight: 500;
+font-size: 1.2rem;
+}
+.projects .proj_cont .container  .card .proj_links a:nth-of-type(1){
+    background-color: rgb(255, 106, 0);
+
+}
+
+.projects .proj_cont .container  .card .proj_links a:nth-of-type(2){
+    background-color: rgb(44, 44, 44);
+
+}
