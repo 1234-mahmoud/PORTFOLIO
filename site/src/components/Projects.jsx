@@ -1,11 +1,9 @@
 import React from "react";
-import Header from "./Header";
 import "../style/Projects.css";
 import data from "../data/data";
 export default function Projects() {
   return (
     <div className="projects">
-      <Header />
       <div className="proj_cont">
         <h1>My Portfolio</h1>
         <div className="container">
@@ -20,6 +18,7 @@ export default function Projects() {
             </div>
           ))}
         </div>
+        
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./Header";
 import "../style/Home.css";
 export default function Home() {
   const skills = [
@@ -14,9 +13,8 @@ export default function Home() {
   ];
   return (
     <div className="home">
-      <Header />
-      <div className="home_content">
 
+      <div className="home_content">
       <div className="layer"></div>
       <div className="container">
         <div className="summary">

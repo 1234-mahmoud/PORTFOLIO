@@ -1,5 +1,7 @@
 .projects{
-    background-color: beige;
+    background-color: rgba(224, 224, 224, 0.822);
+    padding: 20px;
+    height:calc(100vh - 80px);
 }
 
 .projects h1{

@@ -18,7 +18,7 @@ export default function Header() {
           <NavLink className="navlink" to={"/"}>
             Home
           </NavLink>
-          <NavLink className="navlink" to={"Projects"}>
+          <NavLink className="navlink" to={"/projects"}>
             My Projects
           </NavLink>
           <div className="contact navlink" onClick={toggle}>

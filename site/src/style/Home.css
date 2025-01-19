@@ -9,7 +9,7 @@
         z-index: -2;
         position: relative;
 padding:5px 20px;
-height: 100vh;
+height:calc(100vh - 80px);
 }
 
 .home .home_content .layer{
