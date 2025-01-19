@@ -15,7 +15,7 @@ export default function Header() {
     <div className="header">
       <div className="container">
         <div className="links">
-          <NavLink className="navlink" to={"/"}>
+          <NavLink className="navlink" to={"*"}>
             Home
           </NavLink>
           <NavLink className="navlink" to={"/projects"}>
