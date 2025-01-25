@@ -2,6 +2,7 @@ import aprtio from './images/aprtio.jpeg'
 import landing from './images/landing.jpg'
 import hyper from './images/hyper.jpeg'
 import kindle from './images/kindle.jpg'
+import food from './images/food.jpeg'
 const data = [
 
     {
@@ -27,6 +28,12 @@ const data = [
         title:"Onlie Book Store",
         sourseCode:"https://github.com/1234-mahmoud/online_bookstore",
         liveDemo:"https://1234-mahmoud.github.io/online_bookstore/"
+    },
+    {
+        img:food,
+        title:"food store",
+        sourseCode:"https://github.com/1234-mahmoud/Food-Store",
+        liveDemo:"https://1234-mahmoud.github.io/Food-Store/"
     }
 ]
 
