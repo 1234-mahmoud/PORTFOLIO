@@ -1,0 +1,147 @@
+.Home_layout{
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+.Home_layout .home {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  top: 0;
+  /* background-color: rgb(235, 135, 12); */
+  z-index: -1;
+}
+
+.Home_layout .home .introduction {
+  margin:100px;
+}
+
+.Home_layout .home .introduction h1{
+  font-size: 64px;
+color: #25282B;
+font-weight: bold;
+margin: 0 !important;
+}
+
+@media(max-width:767px){
+  .Home_layout .home {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .Home_layout .home .introduction {
+    margin:280px 20px 0;
+  }
+  
+  .Home_layout .home .introduction h1{
+    font-size: 25px;
+  }
+}
+
+@media(min-width:768px) and (max-width:992px){
+  .Home_layout .home .introduction {
+    margin:230px 20px 0;
+  }
+  
+  .Home_layout .home .introduction h1{
+    font-size: 30px;
+  }
+}
+
+@media(min-width:992px) and (max-width:1400px){
+  .Home_layout .home .introduction {
+    margin:160px 50px 0;
+  }
+  
+  .Home_layout .home .introduction h1{
+    font-size: 30px;
+  }
+
+}
+
+.Home_layout .home .introduction p{
+  margin: 20px 0;
+  font-size: 24px;
+  color: #828282;
+}
+@media(max-width:767px){
+  .Home_layout .home .introduction p{
+  font-size: 18px;
+
+  }
+}
+
+
+@media(min-width:768px) and (max-width:992px){
+  .Home_layout .home .introduction p{
+    font-size: 22px;
+  width: 550px;
+    }
+}
+
+@media(min-width:992px) and (max-width:1400px){
+  .Home_layout .home .introduction p{
+    font-size: 22px;
+  width: 700px;
+    }
+}
+
+.Home_layout .home .introduction .intro_btns{
+display: flex;
+gap: 20px;
+}
+.Home_layout .home .introduction .intro_btns button{
+  width: 100px;
+ padding: 5px 20px;
+ font-size: 1.1rem;
+ border-radius: 5px;
+
+}
+.Home_layout .home .introduction .intro_btns button{
+  background-color:#fdc53a ;
+  transition: .5s ease-in-out;
+  font-weight: bold;
+  width: 150px;
+  padding:10px;
+  font-size: 1.3rem;
+}
+.Home_layout .home .introduction .intro_btns button:hover{
+color: white;
+}
+
+
+
+
+
+
+
+/* ------------------------ */
+
+
+.Home_layout .home .personal_pic {
+  position: absolute;
+right: 0;
+top: 0;
+/* min-width: 250px; */
+width: 720px;
+height: 629px;
+}
+
+@media(max-width:767px){
+  .Home_layout .home .personal_pic{
+    width: 300px;
+   
+  }
+}
+
+
+@media(min-width:768px) and (max-width:992px){
+  .Home_layout .home .personal_pic{
+    width: 430px;
+   
+  }
+}
+
+
+@media(min-width:992px) and (max-width:1400px){
+  .Home_layout .home .personal_pic{
+    width: 430px;
+  }
+}
