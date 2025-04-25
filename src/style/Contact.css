@@ -6,7 +6,7 @@
 }
 @media (max-width: 767px) {
   .contact {
-    margin-bottom: 0;
+    margin-bottom:100px;
   }
 }
 .contact h1 {
