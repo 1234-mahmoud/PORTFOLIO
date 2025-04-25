@@ -1,45 +1,43 @@
 import React from "react";
 import "../style/Home.css";
+import background_pic from "../assets/image.png";
+import Skills from "./Skills";
+import Contact from './Contact'
 export default function Home() {
-  const skills = [
-    "Languages & Frameworks: React.js, JavaScript, HTML, CSS",
-    "UI/UX Tools: Tailwind CSS, Bootstrap",
-    "Version Control: Git & GitHub",
-    "Dealing with API: fake API",
-    "Other Skills: Responsive Design, Problem-solving",
-    "Team collaboration",
-    "Communication skills",
-    "Time management",
-  ];
   return (
-    <div className="home">
-
-      <div className="home_content">
-      <div className="layer"></div>
-      <div className="container">
-        <div className="summary">
-          <div className="summary_info">
-            <h1>Summary</h1>
-            <p>
-              As a recent graduate and Front-End Developer skilled in React.js,
-              I am passionate about creating dynamic and user-friendly web
-              applications. I am dedicated to delivering efficient solutions
-              through responsive design, innovative problem-solving, and a
-              continuous drive to learn and adapt in the ever evolving field of
-              web developmen
-            </p>
+    <div className="Home_layout">
+      <div className="home">
+        <div className="introduction">
+          <h1>Hello, My Name</h1>
+          <h1>is Mahmoud Elbalhi</h1>
+          <p>
+            I am a Front-End Developer specializing in web interface development
+            using React.js, with a strong passion for creating smooth and
+            interactive user experiences. I graduated from Damietta University -
+            Faculty of Computers and Information with a Bachelor’s degree in
+            Computer Science. I have skills in HTML, CSS, JavaScript, and
+            React.js, along with experience using Tailwind CSS, Material-UI, and
+            other modern technologies. I am always eager to enhance my skills
+            and stay updated with the latest trends in front-end development,
+            focusing on performance, user experience optimization, and designing
+            responsive interfaces that adapt to different devices.
+          </p>
+          <div className="intro_btns">
+            <button>
+              <a href="https://drive.google.com/file/d/1R6Mr_uMhcdXQDP3DCFr9-OK9TY_A0Yf0/view?usp=drive_link">My CV</a>
+            </button>
+           
           </div>
-       
-
         </div>
-        <h2>My Skills</h2>
-        {skills.map((s, index) => (
-          <ul key={index}>
-            <li>{s}</li>
-          </ul>
-        ))}
+
+        <div className="personal_pic">
+          <img src={background_pic} alt="" loading="lazy"/>
+        </div>
       </div>
-      </div>
+      {/* -----------------Skills----------------------- */}
+      <Skills/>
+      <Contact/>
+     
     </div>
   );
 }

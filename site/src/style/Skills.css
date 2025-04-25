@@ -1,0 +1,40 @@
+.skills_section{
+    padding: 10px;
+    }
+    .skills_section h1{
+      font-size: 40px;
+      font-weight: 600;
+      text-align: center;
+      margin: 20px 0;
+    }
+    
+    @media (max-width:767px) {
+      .skills_section h1 {
+        font-size: 30px;
+      }
+    }
+    .skills_section .my_skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 50px 0;
+
+    }
+    .skills_section .my_skills .img_box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      border: 2px solid #383939b1;
+      border-radius: 10px;
+      padding: 5px;
+    }
+    
+    .skills_section .my_skills .img_box img{
+    width: 60px;
+    height: 70px ;
+    
+    }
+    
