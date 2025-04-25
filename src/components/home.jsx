@@ -24,7 +24,7 @@ export default function Home() {
           </p>
           <div className="intro_btns">
             <button>
-              <a href="https://drive.google.com/file/d/1R6Mr_uMhcdXQDP3DCFr9-OK9TY_A0Yf0/view?usp=drive_link">My CV</a>
+              <a href="https://www.linkedin.com/jobs/application-settings/?hideTitle=true&mpVersion=2.137.73&mpName=voyager-android&li_theme=light">My CV</a>
             </button>
            
           </div>
