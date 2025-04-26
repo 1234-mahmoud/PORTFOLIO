@@ -30,7 +30,7 @@ const data = [
   },
   {
     img: kindle,
-    title: "Onlie Book Store",
+    title: "Online Book Store",
     description:
       "this a simple project of online books store that contains multiple books of Technology",
     sourseCode: "https://github.com/1234-mahmoud/online_bookstore",
